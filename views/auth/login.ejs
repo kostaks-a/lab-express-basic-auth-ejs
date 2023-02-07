@@ -1,0 +1,9 @@
+<h1>Login page</h1>
+<form method="POST" action="/login">
+    <label>Username : <input type="text" name="username" /></label>
+    <label>Password : <input type="password" name="password" /></label>
+    <button type="submit">Login</button>
+</form>
+<% if (typeof errorMessage !== 'undefined') { %>
+    <p style="color: red"><%= errorMessage %></p>
+    <% } %>
